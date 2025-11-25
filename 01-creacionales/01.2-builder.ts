@@ -92,7 +92,7 @@ function main() {
   const usersQuery = new QueryBuilder('users')
     .select('id', 'name', 'email')
     .where('age > 20')
-    // .where("country = 'CHI'") // Esto debe de hacer una condición AND
+.where("country = 'CHI'") // Esto debe de hacer una condición AND
     .orderBy('name', 'ASC')
     .orderBy('age', 'DESC')
     .limit(100)
